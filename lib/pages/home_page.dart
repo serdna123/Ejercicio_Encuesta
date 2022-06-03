@@ -6,10 +6,10 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.indigo,
+      backgroundColor: Theme.of(context).primaryColorDark,
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: Colors.indigo,
+        backgroundColor: Theme.of(context).primaryColorDark,
       ),
       body: Center(
         child: Column(
@@ -26,7 +26,7 @@ class HomePage extends StatelessWidget {
               margin: const EdgeInsets.all(20),
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15)),
-              color: Colors.indigo.shade300,
+              color: Theme.of(context).primaryColorLight,
               child: ListView(
                 shrinkWrap: true,
                 padding: const EdgeInsets.all(10),
@@ -64,7 +64,7 @@ class HomePage extends StatelessWidget {
                     },
                     style: OutlinedButton.styleFrom(
                         primary: Colors.black,
-                        backgroundColor: Colors.indigo.shade100,
+                        backgroundColor: Theme.of(context).primaryColorLight,
                         elevation: 4,
                         side: const BorderSide(width: 1)),
                     child: const Text("Realizar Encuesta"),
@@ -75,7 +75,7 @@ class HomePage extends StatelessWidget {
                     },
                     style: OutlinedButton.styleFrom(
                         primary: Colors.black,
-                        backgroundColor: Colors.indigo.shade100,
+                        backgroundColor: Theme.of(context).primaryColorLight,
                         elevation: 4,
                         side: const BorderSide(width: 1)),
                     child: const Text("Banco de pregunta"),
